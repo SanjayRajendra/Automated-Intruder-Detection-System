@@ -1,0 +1,2 @@
+# Automated-Intruder-Detection-System
+Every Company want to save its confidential data from outside world. This data can be obtained from hacking organisation’s computer system or gaining access into the company. Intruder can make use of tailgating to get into office premises. As current methods are not efficient for security and hence, there is a need to devise new and efficient method. We offer a high-level security system to detect intruder using face recognition and we will also send that report to the Security Command Centre so that they can can take care of Intruder.
