@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Security Command C</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/simple-sidebar.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">SCC</div>
+      <div class="list-group list-group-flush">
+        <a href="Dashboard.html" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+        <a href="addEmployee.html" class="list-group-item list-group-item-action bg-light">Add Employee</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Remove Employee</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-success" id="menu-toggle">Toggle Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="row" id="navbarSupportedContent">
+        <a class="nav-link" href="Login.html">Logout</a>
+        </div>
+      </nav>
+	<div>
+		<br>
+		<center><h4>Employee List</h4></center>
+			<div class="container">    
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>WWID</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Sanjay Awate</td>
+							<td>11111111</td>
+							<td><button type="button" class="btn btn-danger">Remove</button></td>
+						</tr>
+						<tr>
+							<td>Shankar Kanamadi</td>
+							<td>22222222</td>
+							<td><button type="button" class="btn btn-danger">Remove</button></td>
+						</tr>
+						<tr>
+							<td>Jessica Pearson</td>
+							<td>33333333</td>
+							<td><button type="button" class="btn btn-danger">Remove</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+     </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
