@@ -6,6 +6,7 @@ from keras.utils import to_categorical
 from keras.preprocessing.image import ImageDataGenerator
 from keras.datasets import mnist
 from capsule.layers import CapsuleLayer,Mask,Length,PrimaryCap
+from data import *
 
 
 def get_model(input_shape, n_class, num_routing):
@@ -69,8 +70,11 @@ x_test = x_test.reshape(-1, 28, 28, 1).astype('float32') / 255.
 y_train = to_categorical(y_train.astype('float32'))
 y_test = to_categorical(y_test.astype('float32'))
 
-
-
-model=get_model((28,28,1),10,1)
+x,y=get_training_data('./data')
+num_class=len(set(y))
+model=get_model((280,280,3),num_class,1)
 model.summary()
-train(model,((x_train,y_train),(x_test,y_test)),10,20)
+#train(model,((x_train,y_train),(x_test,y_test)),10,20)
+model.fit(x,y)
+model.save_weights('./data/weights.h5')
+model.to_json('./data/model.json')
